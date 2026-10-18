@@ -1,0 +1,25 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[Aa]rtifacts/
+publish/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Temporary files
+[Tt]emp/
+[Tt]mp/
+*.tmp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

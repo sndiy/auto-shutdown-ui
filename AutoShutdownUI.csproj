@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<UseWindowsForms>true</UseWindowsForms>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Konfigurasi Murni 1 File Tunggal -->
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<SelfContained>false</SelfContained>
+		<PublishSingleFile>true</PublishSingleFile>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+		<ApplicationIcon>assets\power.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Cegah bentrok nama (Application, Button, dll.) antara WPF dan WinForms -->
+		<Using Remove="System.Windows.Forms" />
+		<Using Remove="System.Drawing" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="assets\power.ico" />
+	</ItemGroup>
+</Project>
